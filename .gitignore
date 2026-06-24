@@ -1,0 +1,68 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== Virtual environments =====
+venv/
+.venv/
+env/
+ENV/
+
+# ===== IDE / Editor =====
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ===== Model cache (Whisper) =====
+# โมเดล faster-whisper จะถูกดาวน์โหลดไปที่ ~/.cache/huggingface
+# ถ้าเก็บ cache ในโฟลเดอร์โปรเจกต์เอง ก็ไม่อยากให้ commit
+models/
+.cache/
+*.bin
+*.safetensors
+*.gguf
+
+# ===== ไฟล์เสียงตัวอย่าง / ผลลัพธ์ =====
+# ตัด *.mp3 / *.wav ออกถ้าจะ commit ตัวอย่างเข้าไป
+*.mp3
+*.wav
+*.m4a
+*.flac
+*.ogg
+*.webm
+*.aac
+*.opus
+
+# ผลลัพธ์การถอดเสียง
+*.srt
+*.vtt
+transcript*.txt
+output/
+results/
+
+# ===== Environment / secrets =====
+.env
+.env.local
+*.key
+secrets.json
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== OS =====
+desktop.ini
+$RECYCLE.BIN/
